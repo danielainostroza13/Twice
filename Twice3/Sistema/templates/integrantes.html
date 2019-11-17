@@ -1,0 +1,25 @@
+{% extends 'maqueta.html' %}
+{% load staticfiles %}
+{% block principal %}
+
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/carrusel.js' %}"></script>
+<script src="{% static 'js/jquery.bxslider.min.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/index.css' %}"> 
+<link rel="stylesheet" href="{% static 'css/jquery.bxslider.css' %}"> 
+
+<div class="carru">
+        <div id="carrusel">
+          <div><img src="{% static 'img/integrantes/cara1.jpg' %}"><div id="txtimagen"> </div></div>
+          <div><img src="{% static 'img/integrantes/cara2.jpg' %}"><div id="txtimagen"> </div></div>
+          <div><img src="{% static 'img/integrantes/cara3.jpg' %}"><div id="txtimagen"> </div></div>
+          <div><img src="{% static 'img/integrantes/cara4.jpg' %}"><div id="txtimagen"> </div></div>      
+          <div><img src="{% static 'img/integrantes/cara5.jpg' %}"><div id="txtimagen"> </div></div>      
+          <div><img src="{% static 'img/integrantes/cara6.jpg' %}"><div id="txtimagen"> </div></div>      
+          <div><img src="{% static 'img/integrantes/cara7.jpg' %}"><div id="txtimagen"> </div></div>      
+          <div><img src="{% static 'img/integrantes/cara8.jpg' %}"><div id="txtimagen"> </div></div>      
+          <div><img src="{% static 'img/integrantes/cara9.jpg' %}"><div id="txtimagen"> </div></div>
+        </div>
+    </div>
+
+{% endblock %}

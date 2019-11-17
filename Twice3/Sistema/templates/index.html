@@ -1,0 +1,34 @@
+{% extends 'maqueta.html' %}
+{% load staticfiles %}
+{% block principal %}
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/carrusel.js' %}"></script>
+<script src="{% static 'js/jquery.bxslider.min.js' %}"></script>
+
+<link rel="stylesheet" href="{% static 'css/index.css' %}"> 
+<link rel="stylesheet" href="{% static 'css/jquery.bxslider.css' %}"> 
+
+<div class="carru">
+    <div id="carrusel">
+      <div><img src="{% static 'img/carrusel/1.jpg' %}"><div id="txtimagen"> </div></div>
+      <div><img src="{% static 'img/carrusel/2.jpg' %}"><div id="txtimagen"> </div></div>
+      <div><img src="{% static 'img/carrusel/3.jpg' %}"><div id="txtimagen"> </div></div>
+      <div><img src="{% static 'img/carrusel/4.jpg' %}"><div id="txtimagen"> </div></div>      
+      <div><img src="{% static 'img/carrusel/5.jpg' %}"><div id="txtimagen"> </div></div>      
+      <div><img src="{% static 'img/carrusel/6.jpg' %}"><div id="txtimagen"> </div></div>      
+      <div><img src="{% static 'img/carrusel/7.jpg' %}"><div id="txtimagen"> </div></div>      
+      <div><img src="{% static 'img/carrusel/8.jpg' %}"><div id="txtimagen"> </div></div>      
+      <div><img src="{% static 'img/carrusel/9.jpg' %}"><div id="txtimagen"> </div></div>
+    </div>
+</div>
+
+<div class="barra">
+    <div><b>One in a Million</b></div>
+    <div class="social">
+        <a href="https://es-la.facebook.com/JYPETWICE/"><img src="{% static 'img/sociales/facebook.png' %}" alt="Logo Facebook" title="Facebook"></a>
+        <a href="https://www.twitter.com/jypetwice"><img src="{% static 'img/sociales/gorjeo.png' %}" alt="Logo Twitter" title="Twitter"></a>
+        <a href="https://www.instagram.com/twicetagram"><img src="{% static 'img/sociales/instagram.png' %}" alt="Logo Instagram" title="Instagram"></a>
+    </div>
+</div>
+
+{% endblock %}
